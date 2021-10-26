@@ -1,6 +1,6 @@
 {
   "name": "storage-namespace",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "save storage to the specified namespace",
   "main": "index.js",
   "keywords": ["storage","namespace"],

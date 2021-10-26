@@ -30,5 +30,10 @@ import {vueInstall} from 'storage-namespace'
 Vue.use(vueInstall,{
    namespace:"projectNamespace",
 })
+
+
+// 页面内使用
+this.$localStorage("name","namevalue")
+this.$sessionStorage("name","namevalue")
 ```
 

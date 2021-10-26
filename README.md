@@ -6,8 +6,9 @@
 npm install storage-namespace
 ```
 
+#### 常规用法
 ```javascript
-import Storage from 'storage-namespace'
+import {Storage} from 'storage-namespace'
 // 默认是会在setItem和getItem方法上调用前使用JSON.stringify() JSON.parse() 
 // 如果不需要则可以添加第三个参数{setJson:false}
 
@@ -20,5 +21,14 @@ storage.setItem('name','myname')
 storage.getItem('name')
 storage.removeItem('name')
 storage.clear()
+```
+
+#### vue用法
+```vue
+import Vue from 'vue'
+import {vueInstall} from 'storage-namespace' 
+Vue.use(vueInstall,{
+   namespace:"projectNamespace",
+})
 ```
 

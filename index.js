@@ -5,8 +5,8 @@ class Storage {
    * @param {boolean} options.setJson
    * @param {'localStorage'|'sessionStorage'} options.storage
    * */
-  constructor(namespace,{
-    storage='localStorage',
+  constructor(namespace, {
+    storage = 'localStorage',
     setJson = true,
   } = {}) {
     this.setJson = setJson
@@ -85,4 +85,29 @@ class Storage {
   }
 }
 
-export default Storage
+const vueInstall = (vue, {namespace, options={}}) => {
+  const version = Number(vue.version.split('.')[0])
+  let localeStorage = new Storage(namespace, {
+    ...options,
+    storage: "localStorage",
+  })
+  let sessionStorage = new Storage(namespace, {
+    ...options,
+    storage: "sessionStorage",
+  })
+  if (version === 2) {
+    // Vue v2.x.x
+    vue.prototype.$localStorage = localeStorage
+    vue.prototype.$sessionStorage = sessionStorage
+  } else if (version === 3) {
+    // Vue v3.x.x
+    vue.config.globalProperties.$localStorage = localeStorage
+    vue.config.globalProperties.$sessionStorage = sessionStorage
+  } else {
+    // Unsupported versions of Vue
+  }
+}
+export default {
+  Storage,
+  vueInstall
+}

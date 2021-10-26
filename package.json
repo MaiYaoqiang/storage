@@ -5,7 +5,7 @@
   "main": "index.js",
   "keywords": ["storage","namespace"],
   "scripts": {
-    "publish": "npm publish --registry https://registry.npmjs.org"
+    "pb": "npm publish --registry https://registry.npmjs.org"
   },
   "repository": {
     "type": "git",

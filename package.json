@@ -1,0 +1,15 @@
+{
+  "name": "storage",
+  "version": "1.0.0",
+  "description": "save storage to the specified namespace",
+  "main": "index.js",
+  "keywords": ["storage","namespace"],
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:MaiYaoqiang/vue-input-directive.git"
+  },
+  "author": "MaiYaoqiang",
+  "license": "ISC"
+}

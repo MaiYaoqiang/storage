@@ -107,7 +107,7 @@ const vueInstall = (vue, {namespace, options={}}) => {
     // Unsupported versions of Vue
   }
 }
-export default {
+export {
   Storage,
   vueInstall
 }

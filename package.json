@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:MaiYaoqiang/vue-input-directive.git"
+    "url": "https://github.com/MaiYaoqiang/storage.git"
   },
   "author": "MaiYaoqiang",
   "license": "ISC"

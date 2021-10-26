@@ -33,7 +33,9 @@ Vue.use(vueInstall,{
 
 
 // 页面内使用
-this.$localStorage("name","namevalue")
+this.$localStorage.setItem("name","namevalue")
+console.log(this.$localStorage.getItem("name"))
 this.$sessionStorage("name","namevalue")
+console.log(this.$sessionStorage.getItem("name"))
 ```
 

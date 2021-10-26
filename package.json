@@ -1,10 +1,11 @@
 {
   "name": "storage-namespace",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "save storage to the specified namespace",
   "main": "index.js",
   "keywords": ["storage","namespace"],
   "scripts": {
+    "publish": "npm publish --registry https://registry.npmjs.org"
   },
   "repository": {
     "type": "git",

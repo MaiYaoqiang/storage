@@ -1,5 +1,5 @@
 {
-  "name": "storage",
+  "name": "storage-namespace",
   "version": "1.0.0",
   "description": "save storage to the specified namespace",
   "main": "index.js",

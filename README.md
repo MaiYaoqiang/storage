@@ -3,11 +3,11 @@
 
 # 用法
 ```
-npm install storage
+npm install storage-namespace
 ```
 
 ```javascript
-import Storage from 'storage'
+import Storage from 'storage-namespace'
 // 默认是会在setItem和getItem方法上调用前使用JSON.stringify() JSON.parse() 
 // 如果不需要则可以添加第三个参数{setJson:false}
 
